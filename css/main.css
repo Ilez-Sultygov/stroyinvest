@@ -243,6 +243,7 @@ body a {
 }
 
 .directions-block {
+  background-image: url("/img/1.png");
   background-color: #fff;
   text-align: center;
   font-size: 14px;
@@ -455,7 +456,7 @@ body a {
   }
 }
 
-@media (min-width: 575px) and (max-width: 767px) {
+@media (min-width: 576px) and (max-width: 767px) {
   .top-nav__menu {
     display: -webkit-box;
     display: -ms-flexbox;
