@@ -1,0 +1,201 @@
+@import 'interface'
+@import 'fontello'
+
+
+.top-nav
+    background-color: white
+    padding: 15px
+    position: relative
+    &__btn
+        display: none
+        width: 30px
+        height: 30px
+        background-color: transparent
+        border: none
+        font-size: 20px
+        position: absolute
+        top: -50px
+        right: 18px
+        outline: none
+    &__menu
+        list-style: none
+        padding: 0
+        display: flex
+        li  
+            margin-right: 45px
+            &:last-child
+                margin-right: 20px
+        a 
+            text-transform: uppercase
+            text-decoration: none
+            color: #3d3d3d
+            font-weight: 700
+            &::after
+                content: ''
+                display: block
+                width: 100%
+                height: 2px
+                background-color: #009adf
+                transform: translateY(37px) scale(0)
+                transition: all 0.2s
+            &:hover
+                text-decoration: none
+                &::after
+                    transform: translateY(37px) scale(1)
+.left-sidebar
+    margin-top: 40px
+    &__btn
+        display: none
+        background-color: white
+        padding: 15px 30px
+        position: relative
+        &:hover
+            cursor: pointer
+        &::after
+            content: ''
+            display: inline-block
+            width: 15px
+            height: 15px
+            border-bottom: 2px solid #000
+            border-right: 2px solid #000
+            transform: rotate(45deg)
+            position: absolute
+            top: 15px
+            right: 20px
+            
+    &__menu
+        background-color: #fff
+        list-style: none
+        padding: 0
+        li
+            &:first-child
+                padding-top: 10px
+            &:last-child
+                padding-bottom: 10px
+            &:hover
+                background-color: #009adf
+                a
+                    color: white
+            a 
+                display: block
+                text-decoration: none
+                padding: 15px 30px
+                color: #3d3d3d
+                font-size: 16px
+                font-weight: 500
+    &-object
+        background-color: #fff
+        margin-top: 30px
+        &__description
+            padding: 20px
+            h3 
+                text-transform: uppercase
+                font-weight: 400
+.content
+    margin-top: 40px
+    font-size: 14px
+    margin-bottom: 80px
+    text-align: justify
+.strong-text
+    color: #009adf
+    text-transform: uppercase
+.slick-slide:last-child 
+    margin-right: 0 !important
+.directions
+    margin-top: 80px
+    &-block
+        background-color: #fff
+        text-align: center
+        font-size: 14px
+        font-weight: 400
+        line-height: 20px
+        height: 220px
+        padding: 10px
+        background-position: bottom center
+        background-repeat: no-repeat
+        h3  
+            color: #009adf
+.footer
+    background-color: black
+    color: #666666
+    padding: 50px 0
+    margin-top: 60px
+    &__policy
+        font-size: 12px
+        line-height: 20px
+        display: block
+        margin-bottom: 56px
+    a  
+        color: #666666
+        &:hover
+            color: white
+    small  
+        font-size: 10px
+        line-height: 16px
+    .copyright
+        max-width: 80%
+    ul 
+        padding: 0
+        list-style: none
+        line-height: 32px
+    &-contacts
+        text-align: right
+        font-size: 14px
+        font-weight: 400
+        line-height: 20px
+        &__phone
+            color: #009adf !important
+            font-size: 20px
+            font-weight: 700
+            line-height: 20px
+    &-social
+        @extend .footer-contacts
+        li 
+            display: inline-block
+            margin-left: 30px
+            margin-top: 30px
+.team
+    text-align: center
+    h4
+        font-size: 18px
+        font-weight: 400
+        margin-bottom: 15px
+.contacts
+    &-img
+        margin-right: 15px
+        vertical-align: middle
+    &-adress
+        display: block
+        line-height: 2
+    &-btn
+        margin-top: 36px
+        padding: 18px 80px
+    &-social
+        margin-top: 40px
+        ul 
+            list-style: none
+            padding: 0
+            li 
+                display: inline-block
+                a 
+                    background-color: #009adf
+                    display: inline-block
+                    margin-right: 15px
+                    border-radius: 50%
+                    width: 32px
+                    height: 32px
+                    text-align: center
+                    line-height: 32px
+.organization
+    &-block
+        background-color: white
+        padding: 30px
+        margin-bottom: 30px
+        min-height: 366px
+        transition: all 0.2s
+        &:hover
+            box-shadow: 0 5px 10px rgba(0, 0, 1, 0.1)
+        h2
+            text-transform: uppercase
+                
+@import 'media'
