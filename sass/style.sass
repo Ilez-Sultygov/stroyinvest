@@ -1,0 +1,70 @@
+body
+    margin: 0
+    font-family: 'Roboto', sans-serif
+    background-color: #eef3f5
+    color: #3d3d3d
+    padding-top: 40px  
+    img
+        max-width: 100%
+    a
+        text-decoration: none
+        color: black
+.top-navi
+    background-color: #fff
+    padding: 15px
+    &-menu
+        padding: 0
+        display: flex
+        justify-content: space-between
+        
+        li
+            margin-right: 20px
+            list-style: none
+            font-weight: 700
+            text-transform: uppercase
+
+.leftside
+    margin-top: 20px
+    display: flex
+    &-menu
+        list-style: none
+        background-color: #fff
+        padding: 0px
+        font-size: 16px
+        li
+            padding: 20px 30px
+            &:first-child
+                padding-top: 25px
+            &:last-child
+                padding-bottom: 25px
+            &:hover
+                background-color: #009adf
+                a
+                    color: white
+            a 
+                display: block
+                text-decoration: none
+                color: #3d3d3d
+                font-size: 16px
+                font-weight: 500
+    &-objects-obj1
+        background-color: #fff
+        &__description
+            padding: 20px
+            h3
+                text-transform: uppercase
+                margin: 0
+            a
+                color: #009adf
+
+.button
+    padding: 20px 30px
+    margin-top: 10px
+    display: inline-block
+    background-color: #009adf
+    color: white
+    border-radius: 5px
+    &-btn
+        border-bottom: 5px solid darken(#009adf, 10%)
+        &:hover
+            background-color: lighten(#009adf, 3%)
